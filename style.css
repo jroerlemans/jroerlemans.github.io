@@ -156,3 +156,4 @@ ul.main-menu li a.active { color:#FFFFFF; border-bottom-color:#EF6D3D; }
   padding: 6px 10px;
 }
 .modal-close:hover { color:#EF6D3D; }
+body.no-scroll { overflow: hidden; }

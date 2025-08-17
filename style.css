@@ -205,7 +205,7 @@ ul.main-menu li a.active {
   display: block;
   overflow: hidden;
   border-radius: 8px;
-  height: 120px;
+  height: 180px;
 }
 
 .card-image img {

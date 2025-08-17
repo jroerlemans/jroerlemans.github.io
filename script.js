@@ -13,8 +13,9 @@
     const projectData = {
       'dark-web-crawler': {
         title: 'Dark Web Crawler',
-        description: 'A Python-based web crawler designed for security research and forum monitoring. Features advanced filtering, data extraction, and automated reporting capabilities.',
-        image: 'assets/sam.png',
+        description: 'SAM is a dark web crawler. A user of SAM can train a certain forum, inserting search queries, thread listings and other webpage features such that SAM understands the forums structure.'
+        + 'Based on that structure, SAM can crawl the forum and extract data from the pages. Based on that data, the forum can be reconstructed and manually flagged for illegal content, such as ',
+        image: 'assets/SAM.png',
         features: [
           'Automated web crawling and data extraction',
           'Advanced filtering and search capabilities',

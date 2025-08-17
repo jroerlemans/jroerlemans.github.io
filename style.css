@@ -106,13 +106,7 @@ body {
   min-width: 90vw !important;
 }
 
-/* Debug: Add visible borders to see container boundaries */
-#container {
-  border: 2px solid red !important;
-}
-.inner {
-  border: 2px solid blue !important;
-}
+
 header, #content, footer { 
   background: rgba(0,0,0,.8); 
   padding: 25px;
@@ -246,10 +240,14 @@ ul.main-menu li a.active {
   margin-top: 2rem;
   display: none;
   animation: slideIn 0.3s ease;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .project-details.show {
-  display: block;
+  display: block !important;
+  opacity: 1;
+  visibility: visible;
 }
 
 .details-header {
@@ -330,6 +328,110 @@ ul.main-menu li a.active {
 .tech-tag:hover {
   background: rgba(239, 109, 61, 0.3);
   transform: translateY(-2px);
+}
+
+/* Project Details Layout */
+.project-header {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  align-items: flex-start;
+}
+
+.project-image {
+  flex-shrink: 0;
+  width: 200px;
+  height: 150px;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 2px solid rgba(239, 109, 61, 0.3);
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project-info {
+  flex: 1;
+}
+
+.project-info h4 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: #EF6D3D;
+  font-size: 1.8rem;
+}
+
+.project-info p {
+  margin-bottom: 0;
+  font-size: 1.4rem;
+  line-height: 1.6;
+}
+
+.project-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.project-link {
+  display: inline-block;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.4rem;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.project-link.github {
+  background: rgba(239, 109, 61, 0.2);
+  color: #EF6D3D;
+  border-color: #EF6D3D;
+}
+
+.project-link.demo {
+  background: rgba(255, 255, 255, 0.1);
+  color: #FFFFFF;
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.project-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.project-link.github:hover {
+  background: rgba(239, 109, 61, 0.3);
+}
+
+.project-link.demo:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Responsive adjustments for project details */
+@media (max-width: 768px) {
+  .project-header {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .project-image {
+    width: 100%;
+    height: 200px;
+  }
+  
+  .project-links {
+    flex-direction: column;
+  }
+  
+  .project-link {
+    text-align: center;
+  }
 }
 
 @keyframes slideIn {

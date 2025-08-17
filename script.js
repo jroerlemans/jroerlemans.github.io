@@ -75,8 +75,11 @@
 
     // Card click handler
     $('.card').on('click', function() {
+      console.log('Card clicked!');
       const project = $(this).data('project');
+      console.log('Project:', project);
       const data = projectData[project];
+      console.log('Project data:', data);
       
       if (data) {
         $('#selected-project').text(data.title);
@@ -117,6 +120,7 @@
         
         $('#details-content').html(content);
         $('#project-details').addClass('show');
+        console.log('Added show class to project-details');
         
         // Smooth scroll to details
         $('html, body').animate({

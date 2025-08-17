@@ -14,24 +14,26 @@
       'dark-web-crawler': {
         title: 'Dark Web Crawler',
         description: 'SAM is a dark web crawler. A user of SAM can train a certain forum, inserting search queries, thread listings and other webpage features such that SAM understands the forums structure.'
-        + 'Based on that structure, SAM can crawl the forum and extract data from the pages. Based on that data, the forum can be reconstructed and manually flagged for illegal content, such as ',
+        + 'Based on that structure, SAM can crawl the forum and extract data from the pages. Based on that data, the forum can be reconstructed and manually flagged for illegal content, such as '
+        + 'credit card fraud, identity theft, illegal trading, etc. Obviously, forums containing sensitive data want to avoid bots crawling their pages. SAM is made to mimmick a human user, and bypass bot detection using CAPTCHA'
+        + 'solving and human-like mouse movements. SAM is still used by the University today. Due to the sensitivity of the project, no GitHub page or Demo can be featured, but for more in-depth there is a report to be downloaded.',
         image: 'assets/SAM-det.png',
         features: [
           'Automated web crawling and data extraction',
           'Advanced filtering and search capabilities',
           'Data storage in MongoDB database',
           'Security-focused monitoring features',
-          'Automated reporting and alerts'
+          'CAPTCHA solving'
         ],
-        technologies: ['Python', 'MongoDB', 'JavaScript', 'Security', 'Forum Crawling'],
+        technologies: ['Python', 'MongoDB', 'JavaScript', 'Security', 'Forum Crawling', 'TOR'],
         github: '', // No GitHub link for this project
         liveDemo: '', // No demo link for this project
         downloadReport: 'assets/reports/sam.pdf' // PDF report available
       },
-      'mobile-app': {
+      'fluid-simulation': {
         title: 'Task Manager App',
         description: 'A cross-platform mobile application designed to help users organize their daily tasks and increase productivity. Features include task categorization, reminders, progress tracking, and data synchronization.',
-        image: 'assets/rascal.jpg',
+        image: 'assets/fluid-det.png',
         features: [
           'Cross-platform compatibility (iOS & Android)',
           'Offline functionality with local storage',
@@ -39,10 +41,10 @@
           'Data backup and cloud synchronization',
           'Intuitive user interface with dark mode'
         ],
-        technologies: ['React Native', 'JavaScript', 'Firebase', 'Redux', 'AsyncStorage', 'Push Notifications'],
-        github: 'https://github.com/yourusername/task-manager',
-        liveDemo: 'https://taskmanager.app',
-        downloadReport: '' // No report available
+        technologies: ['C', 'C++', 'Physics', 'GLUT'],
+        github: 'https://github.com/jroerlemans/Fluid-Simulation',
+        liveDemo: 'https://drive.google.com/file/d/1b57gsJEGunXQp7qHX033io4D6CX2P-cG/view?usp=sharing',
+        downloadReport: 'assets/reports/fluid.pdf' // No report available
       },
       'data-analysis': {
         title: 'Sales Analytics Dashboard',

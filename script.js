@@ -31,15 +31,16 @@
         downloadReport: 'assets/reports/sam.pdf' // PDF report available
       },
       'fluid-simulation': {
-        title: 'Task Manager App',
-        description: 'A cross-platform mobile application designed to help users organize their daily tasks and increase productivity. Features include task categorization, reminders, progress tracking, and data synchronization.',
+        title: 'Fluid Simulation',
+        description: 'This project features fluid dynamics simulated in a C++ program. By running the simulation, a user can modify parameters during runtime. Flow can be added to the fluid and interacted with. Object collision is '
+        + 'introduced where fluid flow is obstructed by addition of objects. Similarly these objects are two-way coupled, having them move based on average flow on the object. Temperature, vorticity, viscosity, diffusion and bouyance are all '
+        + 'adjustable during runtime allowing for some cool interactions. Information on the math is in the report and all features are explained in the demo.',
         image: 'assets/fluid-det.png',
         features: [
-          'Cross-platform compatibility (iOS & Android)',
-          'Offline functionality with local storage',
-          'Push notifications for task reminders',
-          'Data backup and cloud synchronization',
-          'Intuitive user interface with dark mode'
+          'Physics based simulation',
+          'C/C++ based program',
+          'Fluid to object and object to fluid interactions',
+          'Interaction during runtime'
         ],
         technologies: ['C', 'C++', 'Physics', 'GLUT'],
         github: 'https://github.com/jroerlemans/Fluid-Simulation',

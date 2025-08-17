@@ -50,13 +50,47 @@
             </p>
           </div>
           
-          <div id="about" class="content-region hide">
+          <div id="projects" class="content-region hide">
             <h2>About</h2>
             <p>
               On this page a collection of projects is given 
             </p>
 
-            
+            <div class="card-selection-container">
+              <h3>Select a Project Category</h3>
+              <div class="card-grid">
+                <div class="card" data-category="web-development">
+                  <div class="card-icon">🌐</div>
+                  <h4>Web Development</h4>
+                  <p>Frontend and backend web applications</p>
+                </div>
+                <div class="card" data-category="mobile-apps">
+                  <div class="card-icon">📱</div>
+                  <h4>Mobile Apps</h4>
+                  <p>iOS and Android applications</p>
+                </div>
+                <div class="card" data-category="data-science">
+                  <div class="card-icon">📊</div>
+                  <h4>Data Science</h4>
+                  <p>Machine learning and analytics</p>
+                </div>
+                <div class="card" data-category="game-development">
+                  <div class="card-icon">🎮</div>
+                  <h4>Game Development</h4>
+                  <p>Interactive games and simulations</p>
+                </div>
+              </div>
+              
+              <div class="project-details" id="project-details">
+                <div class="details-header">
+                  <h3 id="selected-category">Select a category above</h3>
+                  <button class="close-details" id="close-details">×</button>
+                </div>
+                <div class="details-content" id="details-content">
+                  <p>Choose a project category to see detailed information and examples.</p>
+                </div>
+              </div>
+            </div>
           </div>
           
           <div id="contact" class="content-region hide">

@@ -1,135 +1,96 @@
 <!doctype html>
 <html>
   <head>
+    <!-- Page setup -->
     <meta charset="utf-8">
-    <title>Jeroen Oerlemans – Portfolio</title>
-    <meta name="description" content="Projects and programming portfolio of Jeroen Oerlemans">
-    <meta name="author" content="Jeroen Oerlemans">
+    <title>Your title here</title>
+    <meta name="description" content="A brief description of your site for search engines">
+    <meta name="author" content="Information about the author here">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
     <link rel="icon" type="image/png" href="favicon.png">
+  
+    <!-- Stylesheets -->
+    <!-- Reset default styles and add support for google fonts -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css" />
+    <link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css" />
+   
+    <!-- Custom styles -->
+    <link href="style.css" rel="stylesheet" type="text/css" />
 
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
-    <link href="style.css" rel="stylesheet" />
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>    
 
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-            crossorigin="anonymous"></script>
+    <!-- Want to add Bootstrap? -->
+    <!-- Visit: https://getbootstrap.com/docs/4.3/getting-started/introduction/ -->
+    
   </head>
-
+  
   <body>
+
     <header id="header">
-      <img src="logo.png" alt="Logo" />
+      <img src="logo.png">
       <h1>Jeroen Oerlemans Programming Portfolio</h1>
+      
+      <!-- Menu link fragment #id should match a div id. Example: <a href="#home"> links to <div id="home"></div>  -->
       <ul class="main-menu">
         <li><a href="#home">Profile</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
-      </ul>
+      </ul>                 
     </header>
-
+   
     <div id="container">
       <div class="inner">
-        <div id="content">
-
+        <div id="content"> 
+          
           <div id="home" class="content-region hide">
             <h2>Home</h2>
-            <p>Welcome! I’m Jeroen. This site showcases a selection of my work in CS/ML/Systems.</p>
+            <p>
+              This is a simple website template published with Github Pages. <a href="https://github.com/zirafa/simple-website-template" >Fork this repository</a> to create your own site!
+            </p>
           </div>
-
-          <!-- PROJECTS TAB -->
-          <div id="projects" class="content-region hide">
-            <h2>Projects</h2>
-            <p>Hover a card for a quick preview. Click to see details, tech stack, and links.</p>
+          
+          <div id="about" class="content-region hide">
+            <h2>About</h2>
+            <p>
+              On this page a collection of projects is given 
+            </p>
 
             <div class="projects-grid">
-              <!-- Card 1 -->
-              <article
-                class="project-card"
-                data-title="Active Learning Toolkit"
-                data-description="A small toolkit for pool-based active learning with uncertainty sampling, disagreement, and calibration plots. Includes pluggable sklearn estimators."
-                data-tech="Python, scikit-learn, PyTorch, NumPy, Matplotlib"
-                data-link="https://github.com/yourname/active-learning-toolkit"
-                data-image="assets/active-learning.jpg"
-              >
-                <div class="card-media" style="background-image:url('assets/active-learning.jpg');"></div>
-                <div class="card-body">
-                  <h3>Active Learning Toolkit</h3>
-                  <p class="card-snippet">Query by Disagreement • ECE plots</p>
-                </div>
-                <div class="card-hover">
-                  <span>Click for details</span>
-                </div>
-              </article>
-
-              <!-- Card 2 -->
-              <article
-                class="project-card"
-                data-title="Rascal DSL: Form → HTML"
-                data-description="A Rascal-based DSL that parses .frm files and generates static HTML/JS pages. Includes CST→AST pipeline, validators, and codegen."
-                data-tech="Rascal, DSLs, Code Generation, HTML/JS"
-                data-link="https://github.com/yourname/rascal-form-dsl"
-                data-image="assets/rascal.jpg"
-              >
-                <div class="card-media" style="background-image:url('assets/rascal.jpg');"></div>
-                <div class="card-body">
-                  <h3>Rascal DSL: Form → HTML</h3>
-                  <p class="card-snippet">CST→AST • Generators</p>
-                </div>
-                <div class="card-hover">
-                  <span>Click for details</span>
-                </div>
-              </article>
-
-              <!-- Card 3 -->
-              <article
-                class="project-card"
-                data-title="Fashion Classifier + Calibration"
-                data-description="CNN on fashion images with balanced accuracy evaluation, temperature scaling, and reliability diagrams. Includes training code and reports."
-                data-tech="PyTorch, Python, TorchVision, Calibration"
-                data-link="https://github.com/yourname/fashion-calib"
-                data-image="assets/fashion.jpg"
-              >
-                <div class="card-media" style="background-image:url('assets/fashion.jpg');"></div>
-                <div class="card-body">
-                  <h3>Fashion Classifier + Calibration</h3>
-                  <p class="card-snippet">CNN • Temp Scaling</p>
-                </div>
-                <div class="card-hover">
-                  <span>Click for details</span>
-                </div>
-              </article>
+              <div class="project-card">
+                <h3>Project One</h3>
+                <p>Short description.</p>
+              </div>
+              <div class="project-card">
+                <h3>Project Two</h3>
+                <p>Short description.</p>
+              </div>
+              <div class="project-card">
+                <h3>Project Three</h3>
+                <p>Short description.</p>
+              </div>
             </div>
           </div>
-
+          
           <div id="contact" class="content-region hide">
             <h2>Contact</h2>
             <h3>Email</h3>
             <p><a href="mailto:jeroerlemans@hotmail.com" target="_blank">jeroerlemans@hotmail.com</a></p>
+
             <h3><a href="https://www.linkedin.com/in/jeroen-oerlemans-01a1701b5" target="_blank">LinkedIn</a></h3>
+            <h3><a href="https://www.linkedin.com/in/jeroen-oerlemans-01a1701b5" target="_blank">GitHub</a></h3>
           </div>
-
+          
         </div>
       </div>
     </div>
 
-    <footer>Footer region</footer>
-
-    <!-- Modal (hidden by default) -->
-    <div class="modal" id="project-modal" aria-hidden="true" role="dialog" aria-modal="true">
-      <div class="modal-backdrop" data-close></div>
-      <div class="modal-dialog" role="document">
-        <button class="modal-close" aria-label="Close" data-close>&times;</button>
-        <div class="modal-media" id="modal-media"></div>
-        <div class="modal-content">
-          <h3 id="modal-title"></h3>
-          <p id="modal-description"></p>
-          <p class="modal-tech"><strong>Tech:</strong> <span id="modal-tech"></span></p>
-          <p><a id="modal-link" href="#" target="_blank" rel="noopener">View repository ↗</a></p>
-        </div>
-      </div>
-    </div>
-
-    <script src="script.js"></script>
+    <footer>  
+      Footer region
+    </footer>
+    
+    <!-- Load additional JS scripts here -->
+    <script type="text/javascript" src="script.js"></script>
+    
   </body>
 </html>

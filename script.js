@@ -8,75 +8,112 @@
     $('.main-menu a[href="' + region + '"]').addClass('active');
   });
 
-  // Card selection functionality
+  // Project selection functionality
   $(document).ready(function() {
     const projectData = {
-      'web-development': {
-        title: 'Web Development',
-        description: 'Frontend and backend web applications built with modern technologies.',
-        projects: [
-          'Responsive portfolio websites',
-          'E-commerce platforms',
-          'Web APIs and microservices',
-          'Progressive Web Apps (PWAs)'
+      'portfolio-website': {
+        title: 'Portfolio Website',
+        description: 'A modern, responsive personal portfolio website showcasing my programming skills and projects. Built with clean, semantic HTML, advanced CSS animations, and interactive JavaScript features.',
+        image: 'assets/rascal.jpg',
+        features: [
+          'Responsive design that works on all devices',
+          'Interactive card-based project showcase',
+          'Smooth animations and hover effects',
+          'Modern glass-morphism design elements',
+          'Optimized for performance and accessibility'
         ],
-        technologies: ['HTML5', 'CSS3', 'JavaScript', 'React', 'Node.js', 'Python', 'Django']
+        technologies: ['HTML5', 'CSS3', 'JavaScript', 'jQuery', 'Responsive Design', 'CSS Grid', 'Flexbox'],
+        github: 'https://github.com/yourusername/portfolio',
+        liveDemo: 'https://yourportfolio.com'
       },
-      'mobile-apps': {
-        title: 'Mobile Apps',
-        description: 'Native and cross-platform mobile applications for iOS and Android.',
-        projects: [
-          'Cross-platform apps with React Native',
-          'Native iOS development with Swift',
-          'Android apps with Kotlin',
-          'Hybrid apps with Flutter'
+      'mobile-app': {
+        title: 'Task Manager App',
+        description: 'A cross-platform mobile application designed to help users organize their daily tasks and increase productivity. Features include task categorization, reminders, progress tracking, and data synchronization.',
+        image: 'assets/rascal.jpg',
+        features: [
+          'Cross-platform compatibility (iOS & Android)',
+          'Offline functionality with local storage',
+          'Push notifications for task reminders',
+          'Data backup and cloud synchronization',
+          'Intuitive user interface with dark mode'
         ],
-        technologies: ['React Native', 'Swift', 'Kotlin', 'Flutter', 'Firebase', 'REST APIs']
+        technologies: ['React Native', 'JavaScript', 'Firebase', 'Redux', 'AsyncStorage', 'Push Notifications'],
+        github: 'https://github.com/yourusername/task-manager',
+        liveDemo: 'https://taskmanager.app'
       },
-      'data-science': {
-        title: 'Data Science',
-        description: 'Machine learning, data analysis, and predictive modeling projects.',
-        projects: [
-          'Predictive analytics models',
-          'Natural language processing',
-          'Computer vision applications',
-          'Data visualization dashboards'
+      'data-analysis': {
+        title: 'Sales Analytics Dashboard',
+        description: 'An interactive business intelligence dashboard that provides real-time insights into sales performance, customer behavior, and market trends. Features advanced data visualization and predictive analytics.',
+        image: 'assets/rascal.jpg',
+        features: [
+          'Real-time data processing and visualization',
+          'Interactive charts and graphs',
+          'Predictive analytics and forecasting',
+          'Customizable reporting and filters',
+          'Export functionality for reports'
         ],
-        technologies: ['Python', 'TensorFlow', 'Pandas', 'NumPy', 'Scikit-learn', 'Jupyter']
+        technologies: ['Python', 'Pandas', 'NumPy', 'Plotly', 'Dash', 'SQL', 'Machine Learning'],
+        github: 'https://github.com/yourusername/sales-dashboard',
+        liveDemo: 'https://sales-dashboard.com'
       },
-      'game-development': {
-        title: 'Game Development',
-        description: 'Interactive games and simulations using modern game engines.',
-        projects: [
-          '2D platformer games',
-          '3D adventure games',
-          'Educational simulations',
-          'VR/AR experiences'
+      'game-project': {
+        title: '2D Platformer Game',
+        description: 'An educational 2D platformer game designed to teach programming concepts through interactive gameplay. Players solve coding challenges while navigating through various levels and obstacles.',
+        image: 'assets/rascal.jpg',
+        features: [
+          'Multiple levels with increasing difficulty',
+          'Interactive programming challenges',
+          'Physics-based gameplay mechanics',
+          'Character customization options',
+          'Progress tracking and achievements'
         ],
-        technologies: ['Unity', 'Unreal Engine', 'C#', 'C++', 'Blender', 'Game Design']
+        technologies: ['Unity', 'C#', 'Game Design', '2D Graphics', 'Physics Engine', 'UI/UX Design'],
+        github: 'https://github.com/yourusername/platformer-game',
+        liveDemo: 'https://platformer-game.com'
       }
     };
 
     // Card click handler
     $('.card').on('click', function() {
-      const category = $(this).data('category');
-      const data = projectData[category];
+      const project = $(this).data('project');
+      const data = projectData[project];
       
       if (data) {
-        $('#selected-category').text(data.title);
+        $('#selected-project').text(data.title);
         
-        let content = `<p>${data.description}</p>`;
-        content += '<h4>Sample Projects:</h4><ul>';
-        data.projects.forEach(project => {
-          content += `<li>${project}</li>`;
+        let content = `
+          <div class="project-header">
+            <div class="project-image">
+              <img src="${data.image}" alt="${data.title}" onerror="this.style.display='none'">
+            </div>
+            <div class="project-info">
+              <h4>Project Description</h4>
+              <p>${data.description}</p>
+            </div>
+          </div>
+          
+          <h4>Key Features</h4>
+          <ul>`;
+        
+        data.features.forEach(feature => {
+          content += `<li>${feature}</li>`;
         });
-        content += '</ul>';
         
-        content += '<h4>Technologies Used:</h4><div class="tech-tags">';
+        content += `</ul>
+          
+          <h4>Technologies Used</h4>
+          <div class="tech-tags">`;
+        
         data.technologies.forEach(tech => {
           content += `<span class="tech-tag">${tech}</span>`;
         });
-        content += '</div>';
+        
+        content += `</div>
+          
+          <div class="project-links">
+            <a href="${data.github}" target="_blank" class="project-link github">View on GitHub</a>
+            <a href="${data.liveDemo}" target="_blank" class="project-link demo">Live Demo</a>
+          </div>`;
         
         $('#details-content').html(content);
         $('#project-details').addClass('show');

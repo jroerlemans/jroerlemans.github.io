@@ -340,7 +340,7 @@ ul.main-menu li a.active {
 
 .project-image {
   flex-shrink: 0;
-  width: 200px;
+  width: auto;
   height: 150px;
   border-radius: 8px;
   overflow: hidden;

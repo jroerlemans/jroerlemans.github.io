@@ -97,13 +97,15 @@ html {
   background-size:cover;
 }
 body {
-  max-width:90%;
-  margin:25px auto;
+  max-width: 90vw;
+  margin: 25px auto;
 }
 header, #content, footer { 
   background: rgba(0,0,0,.8); 
-  padding:25px;
-  color:#FFFFFF; 
+  padding: 25px;
+  color: #FFFFFF; 
+  width: 100%;
+  box-sizing: border-box;
 }
 iframe {
   max-width:100%;

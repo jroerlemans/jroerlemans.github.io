@@ -47,9 +47,11 @@
         liveDemo: 'https://drive.google.com/file/d/1b57gsJEGunXQp7qHX033io4D6CX2P-cG/view?usp=sharing',
         downloadReport: 'assets/reports/fluid.pdf' // No report available
       },
-      'data-analysis': {
-        title: 'Sales Analytics Dashboard',
-        description: 'An interactive business intelligence dashboard that provides real-time insights into sales performance, customer behavior, and market trends. Features advanced data visualization and predictive analytics.',
+      'stratego': {
+        title: 'Stratego - Graphics & AI',
+        description: 'Stratego is a known chess-like game featuring strength based interaction between units. The ultimate goal is to find the opposing teams flag. Unlike chess, opposing units identity is hidden until interacted with by your own pieces. '
+        + 'In this Java-based program, the games mechanics and features are built from scratch. Computer graphic strategies are used to make 3D visualizations of the different pieces and a neural network is made to predict the next best move for the current data. '
+        + '',
         image: 'assets/rascal.jpg',
         features: [
           'Real-time data processing and visualization',

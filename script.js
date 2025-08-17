@@ -14,7 +14,7 @@
       'dark-web-crawler': {
         title: 'Dark Web Crawler',
         description: 'A Python-based web crawler designed for security research and forum monitoring. Features advanced filtering, data extraction, and automated reporting capabilities.',
-        image: 'assets/rascal.jpg',
+        image: 'assets/sam.png',
         features: [
           'Automated web crawling and data extraction',
           'Advanced filtering and search capabilities',
@@ -24,7 +24,8 @@
         ],
         technologies: ['Python', 'MongoDB', 'JavaScript', 'Security', 'Forum Crawling'],
         github: '', // No GitHub link for this project
-        liveDemo: '' // No demo link for this project
+        liveDemo: '', // No demo link for this project
+        downloadReport: 'assets/reports/sam.pdf' // PDF report available
       },
       'mobile-app': {
         title: 'Task Manager App',
@@ -39,7 +40,8 @@
         ],
         technologies: ['React Native', 'JavaScript', 'Firebase', 'Redux', 'AsyncStorage', 'Push Notifications'],
         github: 'https://github.com/yourusername/task-manager',
-        liveDemo: 'https://taskmanager.app'
+        liveDemo: 'https://taskmanager.app',
+        downloadReport: '' // No report available
       },
       'data-analysis': {
         title: 'Sales Analytics Dashboard',
@@ -54,7 +56,8 @@
         ],
         technologies: ['Python', 'Pandas', 'NumPy', 'Plotly', 'Dash', 'SQL', 'Machine Learning'],
         github: 'https://github.com/yourusername/sales-dashboard',
-        liveDemo: 'https://sales-dashboard.com'
+        liveDemo: 'https://sales-dashboard.com',
+        downloadReport: 'assets/reports/sales-analytics-report.pdf' // PDF report available
       },
       'game-project': {
         title: '2D Platformer Game',
@@ -69,7 +72,8 @@
         ],
         technologies: ['Unity', 'C#', 'Game Design', '2D Graphics', 'Physics Engine', 'UI/UX Design'],
         github: 'https://github.com/yourusername/platformer-game',
-        liveDemo: '' // No demo link for this project
+        liveDemo: '', // No demo link for this project
+        downloadReport: '' // No report available
       }
     };
 
@@ -123,6 +127,11 @@
         // Only show Live Demo button if URL is provided and not empty
         if (data.liveDemo && data.liveDemo.trim() !== '') {
           content += `<a href="${data.liveDemo}" target="_blank" class="project-link demo">Live Demo</a>`;
+        }
+        
+        // Only show Download Report button if PDF is provided and not empty
+        if (data.downloadReport && data.downloadReport.trim() !== '') {
+          content += `<a href="${data.downloadReport}" download class="project-link report">Download Report</a>`;
         }
         
         content += `</div>`;

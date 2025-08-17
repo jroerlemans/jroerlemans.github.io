@@ -400,6 +400,12 @@ ul.main-menu li a.active {
   border-color: rgba(255, 255, 255, 0.3);
 }
 
+.project-link.report {
+  background: rgba(76, 175, 80, 0.2);
+  color: #4CAF50;
+  border-color: #4CAF50;
+}
+
 .project-link:hover {
   transform: translateY(-2px);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
@@ -411,6 +417,10 @@ ul.main-menu li a.active {
 
 .project-link.demo:hover {
   background: rgba(255, 255, 255, 0.2);
+}
+
+.project-link.report:hover {
+  background: rgba(76, 175, 80, 0.3);
 }
 
 /* Responsive adjustments for project details */

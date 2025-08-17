@@ -11,20 +11,20 @@
   // Project selection functionality
   $(document).ready(function() {
     const projectData = {
-      'portfolio-website': {
-        title: 'Portfolio Website',
-        description: 'A modern, responsive personal portfolio website showcasing my programming skills and projects. Built with clean, semantic HTML, advanced CSS animations, and interactive JavaScript features.',
+      'dark-web-crawler': {
+        title: 'Dark Web Crawler',
+        description: 'A Python-based web crawler designed for security research and forum monitoring. Features advanced filtering, data extraction, and automated reporting capabilities.',
         image: 'assets/rascal.jpg',
         features: [
-          'Responsive design that works on all devices',
-          'Interactive card-based project showcase',
-          'Smooth animations and hover effects',
-          'Modern glass-morphism design elements',
-          'Optimized for performance and accessibility'
+          'Automated web crawling and data extraction',
+          'Advanced filtering and search capabilities',
+          'Data storage in MongoDB database',
+          'Security-focused monitoring features',
+          'Automated reporting and alerts'
         ],
-        technologies: ['HTML5', 'CSS3', 'JavaScript', 'jQuery', 'Responsive Design', 'CSS Grid', 'Flexbox'],
-        github: 'https://github.com/yourusername/portfolio',
-        liveDemo: 'https://yourportfolio.com'
+        technologies: ['Python', 'MongoDB', 'JavaScript', 'Security', 'Forum Crawling'],
+        github: '', // No GitHub link for this project
+        liveDemo: '' // No demo link for this project
       },
       'mobile-app': {
         title: 'Task Manager App',
@@ -69,7 +69,7 @@
         ],
         technologies: ['Unity', 'C#', 'Game Design', '2D Graphics', 'Physics Engine', 'UI/UX Design'],
         github: 'https://github.com/yourusername/platformer-game',
-        liveDemo: 'https://platformer-game.com'
+        liveDemo: '' // No demo link for this project
       }
     };
 
@@ -113,10 +113,19 @@
         
         content += `</div>
           
-          <div class="project-links">
-            <a href="${data.github}" target="_blank" class="project-link github">View on GitHub</a>
-            <a href="${data.liveDemo}" target="_blank" class="project-link demo">Live Demo</a>
-          </div>`;
+          <div class="project-links">`;
+        
+        // Only show GitHub button if URL is provided and not empty
+        if (data.github && data.github.trim() !== '') {
+          content += `<a href="${data.github}" target="_blank" class="project-link github">View on GitHub</a>`;
+        }
+        
+        // Only show Live Demo button if URL is provided and not empty
+        if (data.liveDemo && data.liveDemo.trim() !== '') {
+          content += `<a href="${data.liveDemo}" target="_blank" class="project-link demo">Live Demo</a>`;
+        }
+        
+        content += `</div>`;
         
         $('#details-content').html(content);
         $('#project-details').addClass('show');

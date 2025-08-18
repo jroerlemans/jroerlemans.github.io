@@ -81,23 +81,6 @@
         liveDemo: '', // No demo link for this project
         downloadReport: 'assets/reports/forma.pdf' // No report available
       },
-      'machine-learning': {
-        title: 'Machine Learning Pipeline',
-        description: 'A comprehensive machine learning pipeline designed for production-ready predictive analytics. The system includes automated data preprocessing, feature engineering, model selection, and deployment capabilities. '
-        + 'Built with scalability in mind, it can handle large datasets and provides real-time predictions through a REST API. The pipeline includes automated hyperparameter tuning, cross-validation, and model performance monitoring.',
-        image: 'assets/sam-det.png',
-        features: [
-          'Automated data preprocessing and feature engineering',
-          'Multiple ML algorithms with automated selection',
-          'Hyperparameter optimization and cross-validation',
-          'Model deployment with REST API',
-          'Real-time prediction capabilities'
-        ],
-        technologies: ['Python', 'Scikit-learn', 'TensorFlow', 'Docker', 'FastAPI', 'PostgreSQL'],
-        github: 'https://github.com/jroerlemans/ml-pipeline',
-        liveDemo: 'https://ml-demo.jroerlemans.com',
-        downloadReport: 'assets/reports/ml-pipeline.pdf'
-      },
       'advent-of-code': {
         title: 'Advent of Code 2024',
         description: 'Advent of Code is a fun challenge every year in december giving those participating a fun coding challenge. Despite being quite time-consuming I did it with great joy. Finished the first 7 days flawlessly, but it took '
@@ -111,23 +94,6 @@
         github: 'https://github.com/jroerlemans/advent-of-code-2024',
         liveDemo: '',
         downloadReport: '' // No report available for this project
-      },
-      'data-visualization': {
-        title: 'Interactive Data Visualization',
-        description: 'A comprehensive data visualization dashboard built with D3.js and React. The application provides interactive charts, graphs, and data filtering capabilities for complex datasets. '
-        + 'Features include real-time data updates, customizable chart types, responsive design, and export functionality. The dashboard is designed to handle large datasets efficiently with smooth animations and user-friendly interactions.',
-        image: 'assets/visualization-det.png',
-        features: [
-          'Interactive charts and graphs',
-          'Real-time data updates',
-          'Customizable visualizations',
-          'Responsive design',
-          'Data export capabilities'
-        ],
-        technologies: ['React', 'D3.js', 'JavaScript', 'CSS3', 'Data Analysis', 'SVG'],
-        github: 'https://github.com/jroerlemans/data-viz-dashboard',
-        liveDemo: 'https://dataviz.jroerlemans.com',
-        downloadReport: ''
       },
       'minecraft-plugins': {
         title: 'Minecraft Plugins',

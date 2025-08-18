@@ -52,31 +52,31 @@
         description: 'Stratego is a known chess-like game featuring strength based interaction between units. The ultimate goal is to find the opposing teams flag. Unlike chess, opposing units identity is hidden until interacted with by your own pieces. '
         + 'In this Java-based program, the games mechanics and features are built from scratch. Computer graphic strategies are used to make 3D visualizations of the different pieces and a neural network is made to predict the next best move for the current data. '
         + '',
-        image: 'assets/rascal.jpg',
+        image: 'assets/stratego-det.png',
         features: [
-          'Real-time data processing and visualization',
-          'Interactive charts and graphs',
-          'Predictive analytics and forecasting',
-          'Customizable reporting and filters',
-          'Export functionality for reports'
+          'Stratego game design',
+          'Monte-Carlo Tree neural network',
+          'Computer Graphics to model unit types',
+          'Best next move prediction'
         ],
-        technologies: ['Python', 'Pandas', 'NumPy', 'Plotly', 'Dash', 'SQL', 'Machine Learning'],
-        github: 'https://github.com/yourusername/sales-dashboard',
-        liveDemo: 'https://sales-dashboard.com',
-        downloadReport: 'assets/reports/sales-analytics-report.pdf' // PDF report available
+        technologies: ['Java', 'Computer Graphics', 'Neural Network', '3D modeling'],
+        github: 'https://github.com/jroerlemans/Stratego',
+        liveDemo: '',
+        downloadReport: 'assets/reports/stratego.pdf' // PDF report available
       },
-      'game-project': {
-        title: '2D Platformer Game',
-        description: 'An educational 2D platformer game designed to teach programming concepts through interactive gameplay. Players solve coding challenges while navigating through various levels and obstacles.',
-        image: 'assets/rascal.jpg',
+      'forma': {
+        title: 'Domain Specific Language: Forma',
+        description: 'Forma is a custom made domain language using Rascal. This means Forma has a customly designed language syntax, both abstract and concrete and based on that syntax, code is generated. More specific, a user can define certain shapes: circles, '
+        + 'rectangles and triangles. These shapes can hold properties based on its type. A circle for example has a radius and position, while a rectangle has a width and height. Based on the set properties a JavaScript + HTML file is produced to create '
+        + 'a webpage comforming to the specification provided. Shapes can be composite and looped, creating interesting webpage designs. Furthermore, rules can be applied to change shapes during runtime based on shape or position.',
+        image: 'assets/forma-det.png',
         features: [
-          'Multiple levels with increasing difficulty',
-          'Interactive programming challenges',
-          'Physics-based gameplay mechanics',
-          'Character customization options',
-          'Progress tracking and achievements'
+          'Domain Specific Language from scratch',
+          'Syntax definitions',
+          'Concrete to Abstract implosion',
+          'Syntax to Code transformation'
         ],
-        technologies: ['Unity', 'C#', 'Game Design', '2D Graphics', 'Physics Engine', 'UI/UX Design'],
+        technologies: ['Rascal', 'JavaScript', 'DSL design', 'JSON'],
         github: 'https://github.com/yourusername/platformer-game',
         liveDemo: '', // No demo link for this project
         downloadReport: '' // No report available

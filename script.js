@@ -80,6 +80,40 @@
         github: 'https://github.com/jroerlemans/Forma-Language',
         liveDemo: '', // No demo link for this project
         downloadReport: 'assets/reports/forma.pdf' // No report available
+      },
+      'machine-learning': {
+        title: 'Machine Learning Pipeline',
+        description: 'A comprehensive machine learning pipeline designed for production-ready predictive analytics. The system includes automated data preprocessing, feature engineering, model selection, and deployment capabilities. '
+        + 'Built with scalability in mind, it can handle large datasets and provides real-time predictions through a REST API. The pipeline includes automated hyperparameter tuning, cross-validation, and model performance monitoring.',
+        image: 'assets/sam-det.png',
+        features: [
+          'Automated data preprocessing and feature engineering',
+          'Multiple ML algorithms with automated selection',
+          'Hyperparameter optimization and cross-validation',
+          'Model deployment with REST API',
+          'Real-time prediction capabilities'
+        ],
+        technologies: ['Python', 'Scikit-learn', 'TensorFlow', 'Docker', 'FastAPI', 'PostgreSQL'],
+        github: 'https://github.com/jroerlemans/ml-pipeline',
+        liveDemo: 'https://ml-demo.jroerlemans.com',
+        downloadReport: 'assets/reports/ml-pipeline.pdf'
+      },
+      'web-app': {
+        title: 'Full-Stack Web Application',
+        description: 'A modern, responsive web application featuring a React frontend with Material-UI components and a Node.js backend with Express. The app includes user authentication, real-time data synchronization using WebSockets, '
+        + 'and a comprehensive dashboard for data visualization. Built with scalability and performance in mind, it features lazy loading, code splitting, and optimized database queries.',
+        image: 'assets/sam-det.png',
+        features: [
+          'React frontend with Material-UI components',
+          'Node.js backend with Express framework',
+          'Real-time data synchronization',
+          'User authentication and authorization',
+          'Responsive design for all devices'
+        ],
+        technologies: ['React', 'Node.js', 'Express', 'MongoDB', 'WebSocket', 'JWT'],
+        github: 'https://github.com/jroerlemans/fullstack-app',
+        liveDemo: 'https://webapp.jroerlemans.com',
+        downloadReport: '' // No report available for this project
       }
     };
 

@@ -156,7 +156,7 @@ ul.main-menu li a.active {
 
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
   margin: 2rem 0;
 }
@@ -468,6 +468,14 @@ ul.main-menu li a.active {
   
   .card-icon {
     font-size: 3rem;
+  }
+}
+
+/* Medium screens - 2 columns */
+@media (min-width: 769px) and (max-width: 1200px) {
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
   }
 }
 

@@ -129,20 +129,18 @@
         liveDemo: 'https://dataviz.jroerlemans.com',
         downloadReport: ''
       },
-      'mobile-app': {
-        title: 'Cross-Platform Mobile App',
-        description: 'A React Native mobile application designed for cross-platform compatibility between iOS and Android. The app features offline-first architecture, push notifications, '
-        + 'and seamless user experience across different devices. Built with modern mobile development practices including state management, navigation, and native module integration.',
-        image: 'assets/visualization-det.png',
+      'minecraft-plugins': {
+        title: 'Minecraft Plugins',
+        description: 'All these project started with a passion for Minecraft server development. I was able to retrieve some backups of some of my custom work for servers I worked for as a teenager. Code here should be taken for its enthousiasm and not its quality! '
+        + 'Projects include a Kingdom plugin, featuring a factions-like plugin that has warfare mechanics and more stuff I experimented with at the time, it includes a Staff management tool preventing power abuse. Unfortunately due to the amount of time passing, I was not able to recover a lot of it.',
+        image: 'assets/minecraft-det.png',
         features: [
-          'Cross-platform compatibility',
-          'Offline-first architecture',
-          'Push notifications',
-          'Native performance',
-          'Responsive design'
+          'Custom made plugins',
+          'Server Administration',
+          '(A version of a) Factions-like plugin'
         ],
-        technologies: ['React Native', 'JavaScript', 'Redux', 'Firebase', 'Mobile Development'],
-        github: 'https://github.com/jroerlemans/mobile-app',
+        technologies: ['Java', 'SpigotMC', 'CraftBukkit', 'BungeeCord', 'Minecraft'],
+        github: 'https://github.com/jroerlemans/minecraft-plugins-backup',
         liveDemo: '',
         downloadReport: ''
       }

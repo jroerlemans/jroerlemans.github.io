@@ -98,20 +98,16 @@
         liveDemo: 'https://ml-demo.jroerlemans.com',
         downloadReport: 'assets/reports/ml-pipeline.pdf'
       },
-      'web-app': {
-        title: 'Full-Stack Web Application',
-        description: 'A modern, responsive web application featuring a React frontend with Material-UI components and a Node.js backend with Express. The app includes user authentication, real-time data synchronization using WebSockets, '
-        + 'and a comprehensive dashboard for data visualization. Built with scalability and performance in mind, it features lazy loading, code splitting, and optimized database queries.',
-        image: 'assets/sam-det.png',
+      'advent-of-code': {
+        title: 'Advent of Code 2024',
+        description: 'Advent of Code is a fun challenge every year in december giving those participating a fun coding challenge. Despite being quite time-consuming I did it with great joy. Finished the first 7 days flawlessly, but it took '
+        + 'a bit of time every day and exams and deadlines caught up.',
+        image: 'assets/adventofcode-det.png',
         features: [
-          'React frontend with Material-UI components',
-          'Node.js backend with Express framework',
-          'Real-time data synchronization',
-          'User authentication and authorization',
-          'Responsive design for all devices'
+          'First 7 days of solutions A and B in Java'
         ],
-        technologies: ['React', 'Node.js', 'Express', 'MongoDB', 'WebSocket', 'JWT'],
-        github: 'https://github.com/jroerlemans/fullstack-app',
+        technologies: ['Java'],
+        github: 'https://github.com/jroerlemans/advent-of-code-2024',
         liveDemo: 'https://webapp.jroerlemans.com',
         downloadReport: '' // No report available for this project
       }

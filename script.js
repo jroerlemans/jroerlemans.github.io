@@ -77,9 +77,9 @@
           'Syntax to Code transformation'
         ],
         technologies: ['Rascal', 'JavaScript', 'DSL design', 'JSON'],
-        github: 'https://github.com/yourusername/platformer-game',
+        github: 'https://github.com/jroerlemans/Forma-Language',
         liveDemo: '', // No demo link for this project
-        downloadReport: '' // No report available
+        downloadReport: 'assets/reports/forma.pdf' // No report available
       }
     };
 

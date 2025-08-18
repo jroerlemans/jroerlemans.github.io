@@ -111,6 +111,40 @@
         github: 'https://github.com/jroerlemans/advent-of-code-2024',
         liveDemo: '',
         downloadReport: '' // No report available for this project
+      },
+      'data-visualization': {
+        title: 'Interactive Data Visualization',
+        description: 'A comprehensive data visualization dashboard built with D3.js and React. The application provides interactive charts, graphs, and data filtering capabilities for complex datasets. '
+        + 'Features include real-time data updates, customizable chart types, responsive design, and export functionality. The dashboard is designed to handle large datasets efficiently with smooth animations and user-friendly interactions.',
+        image: 'assets/visualization-det.png',
+        features: [
+          'Interactive charts and graphs',
+          'Real-time data updates',
+          'Customizable visualizations',
+          'Responsive design',
+          'Data export capabilities'
+        ],
+        technologies: ['React', 'D3.js', 'JavaScript', 'CSS3', 'Data Analysis', 'SVG'],
+        github: 'https://github.com/jroerlemans/data-viz-dashboard',
+        liveDemo: 'https://dataviz.jroerlemans.com',
+        downloadReport: ''
+      },
+      'mobile-app': {
+        title: 'Cross-Platform Mobile App',
+        description: 'A React Native mobile application designed for cross-platform compatibility between iOS and Android. The app features offline-first architecture, push notifications, '
+        + 'and seamless user experience across different devices. Built with modern mobile development practices including state management, navigation, and native module integration.',
+        image: 'assets/visualization-det.png',
+        features: [
+          'Cross-platform compatibility',
+          'Offline-first architecture',
+          'Push notifications',
+          'Native performance',
+          'Responsive design'
+        ],
+        technologies: ['React Native', 'JavaScript', 'Redux', 'Firebase', 'Mobile Development'],
+        github: 'https://github.com/jroerlemans/mobile-app',
+        liveDemo: '',
+        downloadReport: ''
       }
     };
 

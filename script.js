@@ -104,11 +104,12 @@
         + 'a bit of time every day and exams and deadlines caught up.',
         image: 'assets/adventofcode-det.png',
         features: [
-          'First 7 days of solutions A and B in Java'
+          'First 7 days of solutions A and B',
+          'Java only solutions'
         ],
-        technologies: ['Java'],
+        technologies: ['Java', 'Advent of Code'],
         github: 'https://github.com/jroerlemans/advent-of-code-2024',
-        liveDemo: 'https://webapp.jroerlemans.com',
+        liveDemo: '',
         downloadReport: '' // No report available for this project
       }
     };
